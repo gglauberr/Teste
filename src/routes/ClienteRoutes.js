@@ -10,4 +10,6 @@ routes.get('/:id', ClienteController.show)
 routes.put('/:id', ClienteController.update)
 routes.delete('/:id', ClienteController.delete)
 
+routes.get('/filter/:nome', ClienteController.nome)
+
 module.exports = routes
